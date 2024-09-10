@@ -17,4 +17,9 @@ public abstract class CommandeDocument implements Commande {
     public void executer() {
         System.out.println(this.document);
     }
+
+    public void commandeExecuter(){
+        this.executer();
+        System.out.println(document);
+    }
 }

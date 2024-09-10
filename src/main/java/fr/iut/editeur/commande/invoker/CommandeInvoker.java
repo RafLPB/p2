@@ -18,6 +18,6 @@ public class CommandeInvoker {
     private CommandeInvoker() {}
 
     public void executer(Commande commande) {
-        commande.executer();
+        commande.commandeExecuter();
     }
 }

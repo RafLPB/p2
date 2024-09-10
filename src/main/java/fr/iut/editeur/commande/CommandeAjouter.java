@@ -17,7 +17,6 @@ public class CommandeAjouter extends CommandeDocument {
         }
         String texte = parameters[1];
         this.document.ajouter(texte);
-        super.executer();
     }
 
 }

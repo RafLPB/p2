@@ -1,6 +1,5 @@
-package fr.iut.editeur.commande.invoker;
+package fr.iut.editeur.commande;
 
-import fr.iut.editeur.commande.CommandeDocument;
 import fr.iut.editeur.document.Document;
 
 public class CommandeMajuscule extends CommandeDocument {
@@ -18,6 +17,5 @@ public class CommandeMajuscule extends CommandeDocument {
         int debut = Integer.parseInt(parameters[1]);
         int fin = Integer.parseInt(parameters[2]);
         this.document.majuscules(debut, fin);
-        super.executer();
     }
 }
