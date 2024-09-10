@@ -40,6 +40,6 @@ public class Document {
     }
 
     public void clear(){
-        this.texte = "i";
+        this.texte = "";
     }
 }
