@@ -4,6 +4,10 @@ import fr.iut.editeur.commande.*;
 import fr.iut.editeur.commande.CommandeMajuscule;
 import fr.iut.editeur.document.Document;
 
+/**
+ * Description classe
+ * Elle permet de creer chaques commandes que l'on ajoutera dans {@link #createCommand}
+ */
 public class CommandeFactory {
 
     private static CommandeFactory instance;
@@ -17,6 +21,14 @@ public class CommandeFactory {
 
     private CommandeFactory() {}
 
+    /**
+     * Description méthode
+     * Elle est utilisée pour rechercher et executer une commande mise en amont dans cette meme méthode
+     * @param name nom de la commande voulu
+     * @param document document sur lequel la commande va etre executé
+     * @param parameters ligne de commande donnée au prog
+     * @return l'execution de la commande voulu
+     */
     public Commande createCommand(String name, Document document, String[] parameters) {
         switch (name) {
             case "ajouter" : return new CommandeAjouter(document, parameters);
